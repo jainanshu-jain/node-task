@@ -1,0 +1,72 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><div class="brand-content">
+          <img src="/images/th.jpeg" height="50" width="50" alt="logo-image"/>
+          <div class="brand-text">
+            <span class="brand-title" >Placement <span class="brand-subtitle">CELL</span></span>
+          </div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" 
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <% if (locals.user) { %>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-2">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+
+          <li class="nav-item me-2">
+            <a class="nav-link active" href="/students/add-student">Add Student</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="/interviews/add-interview">Schedule Interview</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="/jobs/joblist">Open Positions</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-lg-0">
+          <li class="nav-btn">
+            <a class="navbar-brand p-1" href="/download-report" style="font-size: 26px; color: rgb(255, 255, 255)">
+              <i class="fa-solid fa-file-arrow-down" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Report"></i>
+            </a>
+          </li>
+
+          <li class="nav-btn">
+            <a class="btn btn-outline-light" href="/users/profile">
+              <i class="fas fa-user-circle"></i>
+              <span class="text-capitalize ps-1 fw-bold"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="User profile"
+                ><%= locals.user.username %></span
+              >
+            </a>
+          </li>
+          <li class="nav-btn">
+            <a class="btn btn-outline-light" href="/users/logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="ps-1 fw-bold">Logout</span>
+            </a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

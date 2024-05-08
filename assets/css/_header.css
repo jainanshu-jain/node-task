@@ -1,0 +1,42 @@
+.navbar .navbar-nav .nav-item a {
+  padding: 15px;
+}
+
+.navbar .navbar-nav .nav-btn {
+  padding: 10px;
+  background-color: brown;
+}
+
+.brand-content {
+  display: flex;
+  align-items: center;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; /* Adjust margin as needed */
+  letter-spacing: 1px;
+}
+
+.brand-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.brand-subtitle {
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-btn .fa-user-circle {
+  font-size: 18px;
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 18px;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: #007bff;
+}

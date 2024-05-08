@@ -1,0 +1,43 @@
+<!-- create card fo displaying job openings -->
+<link rel="stylesheet" href="/css/job.css" />
+<!-- Job Portal Page -->
+<% if (locals.user) { %>
+<div class="jobPortal">
+  <div class="jobPage d-flex">
+    <% jobs.forEach(job => {%>
+    <!-- Job Card -->
+    <div class="card" style="width: 25rem">
+      <h5 class="card-header bg-info text-dark p-3 fs-5">
+        <%= job.company.display_name %>
+      </h5>
+      <div class="card-body">
+        <h5 class="card-title"><%= job.title %></h5>
+        <p class="card-text">
+          <span class="fw-bold">Job category :</span>
+          <%=job.category.label%>
+        </p>
+        <p class="card-text">
+          <span class="fw-bold">Job description :</span> <%=job.description%>
+        </p>
+        <p class="card-text">
+          <span class="fw-bold">contract_time : </span><%=job.contract_time%>
+        </p>
+        <p class="card-text">
+          <span class="fw-bold"
+            >Job Location: <%= job.location.display_name %></span
+          >
+        </p>
+        <p class="mt-4" style="text-align: center">
+          <a
+            href="<%= job.redirect_url %>"
+            target="_blank"
+            class="btn btn-outline-primary"
+            >Apply Now</a
+          >
+        </p>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</div>
+<% } %>

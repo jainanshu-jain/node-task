@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/signup.css" />
+<form id="signin-form" action="/users/create-session" method="POST" class="signup">
+  <h1>Login</h1>
+  <h2>
+    Don't have an account?
+    <a href="/users/signup"><span>Create account</span></a>
+  </h2>
+
+  <div class="signup__field">
+    <input class="signup__input" type="text" name="email" id="email" required />
+    <label class="signup__label" for="email">Email</label>
+  </div>
+
+  <div class="signup__field">
+    <input
+      class="signup__input"
+      type="password"
+      name="password"
+      id="password"
+      required
+    />
+    <label class="signup__label" for="password">Password</label>
+  </div>
+
+  <button>Login now</button>
+</form>

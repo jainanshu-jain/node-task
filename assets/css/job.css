@@ -1,0 +1,40 @@
+.jobPortal {
+  background-color: #c7c7c7;
+}
+
+.jobPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 30px;
+  background-color: #fff;
+  color: #302b2b;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}

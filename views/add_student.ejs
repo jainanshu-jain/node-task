@@ -1,0 +1,105 @@
+<section
+  class="container my-2 bg-dark w-50 text-light p-2"
+  style="border-radius: 1rem">
+  
+  <form
+    id="studentForm"
+    class="row g-4 mt-4 p-3"
+    action="/students/create"
+    method="POST"
+    onsubmit="handleSubmit(event)">
+
+    <h4 class="m-0">Add Student</h4>
+    <div class="col-12">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        placeholder="Enter student name"
+        required/>
+    </div>
+
+    <div class="col-12">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter student email"
+        id="email"
+        name="email"
+        required />
+    </div>
+
+    <div class="col-12">
+      <label for="college" class="form-label">College</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter student college"
+        id="college"
+        name="college"
+        required
+      />
+    </div>
+
+    <div class="col-md-6">
+      <label for="batch" class="form-label">Batch</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter student batch"
+        id="batch"
+        name="batch"
+        required
+      />
+    </div>
+
+    <div class="col-md-6">
+      <label for="status" class="form-label">Placement Status</label>
+      <select id="status" name="placement_status" class="form-select" required>
+        <option selected>Choose...</option>
+        <option value="placed">Placed</option>
+        <option value="not_placed">Not Placed</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="dsaScore" class="form-label">DSA Final Score</label>
+      <input
+        type="number"
+        id="dsaScore"
+        class="form-control"
+        name="courseScores.dsaFinalScore"
+        required
+      />
+    </div>
+    <div class="col-md-4">
+      <label for="webDScore" class="form-label">WebD Final Score</label>
+      <input
+        type="number"
+        id="webDScore"
+        class="form-control"
+        name="courseScores.webDFinalScore"
+        required
+      />
+    </div>
+    <div class="col-md-4">
+      <label for="reactScore" class="form-label">React Final Score</label>
+      <input
+        type="number"
+        id="reactScore"
+        class="form-control"
+        name="courseScores.reactFinalScore"
+        required
+      />
+    </div>
+    <div class="text-center py-2">
+      <button class="btn btn-primary btn-lg btn-rounded px-4" type="submit">
+        Add Student
+      </button>
+    </div>
+  </form>
+</section>
+
+<script src="/js/add_home-students.js" type="text/javascript"></script>
