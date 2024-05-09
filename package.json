@@ -12,7 +12,7 @@
     "Website",
     "Interview"
   ],
-  "author": "Prashant Yallatti",
+  "author": "Anshika Jain",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0",
