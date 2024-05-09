@@ -2,6 +2,9 @@
 
 This project is a Full Stack web application built for Team Career Camp to maintain a database of student interviews. It allows employees to manage student details, course scores, interviews, and results. Additionally, it includes a bonus feature that fetches real available jobs in India for React/Node.js using external APIs.
 
+#YOUTUBE CHANNEL:-
+https://youtu.be/j6htj5zROsE
+
 ## Installation
 
 1) Clone the repository: git clone https://github.com/jainanshu-jain/node-task
